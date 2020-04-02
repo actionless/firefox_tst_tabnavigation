@@ -12,7 +12,7 @@
 	"commands": {
 	  "toggle-keynavigation": {
 		"suggested_key": {
-		  "default": "Ctrl+Shift+U"
+		  "default": "Ctrl+Shift+L"
 		},
 		"description": "Show keyboard navigation overlay"
 	  }
