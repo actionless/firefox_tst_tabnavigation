@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2,
+	"name": "tst_tabnavigation",
+	"version": "0.3",
+	"description": "Improved keyboard navigtion for Tree Style Tab",
+
+	"icons": {
+		"48": "icons/icon.png",
+		"96": "icons/icon@2x.png"
+	},
+
+	"commands": {
+	  "toggle-keynavigation": {
+		"suggested_key": {
+		  "default": "Ctrl+Shift+U"
+		},
+		"description": "Show keyboard navigation overlay"
+	  }
+	},
+
+	"permissions": [
+		"storage",
+		"tabs"
+	],
+	"background": {
+		"scripts": ["background.js"]
+	}
+
+}
