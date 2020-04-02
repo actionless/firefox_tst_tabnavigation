@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "tst_tabnavigation",
-	"version": "0.3",
+	"version": "0.4",
 	"description": "Improved keyboard navigtion for Tree Style Tab",
 
 	"icons": {

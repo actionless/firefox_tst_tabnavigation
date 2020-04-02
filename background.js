@@ -9,7 +9,19 @@
 
     const init = async () => {
         console.log(`Loading ${EXT_NAME}...`);
-        await registerToTST();
+        browser.runtime.onMessageExternal.addListener((message, sender) => {
+            switch (sender.id) {
+            case TST_ID:
+                switch (message.type) {
+                case "ready":
+                case "permissions-changed":
+                    registerToTST(); // passive registration for secondary (or after) startup
+                    break;
+                }
+                break;
+            }
+        });
+        await registerToTST(); // aggressive registration on initial installation
         await handleTabNumbersVisibility({toggle: false});
         browser.commands.onCommand.addListener(async (command) => {
             if (command === "toggle-keynavigation") {
