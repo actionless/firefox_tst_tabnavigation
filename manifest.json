@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "tst_tabnavigation",
-	"version": "0.4",
+	"version": "0.5",
 	"description": "Improved keyboard navigtion for Tree Style Tab",
 
 	"icons": {
@@ -22,6 +22,13 @@
 		"storage",
 		"tabs"
 	],
+
+	"browser_specific_settings": {
+	  "gecko": {
+		"id": "{9d2b1d4e-04e3-4ec2-9ed2-bee38fc09b8b}"
+	  }
+	},
+
 	"background": {
 		"scripts": ["background.js"]
 	}
